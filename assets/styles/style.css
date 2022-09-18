@@ -43,7 +43,7 @@ body {
 }
 
 .btn {
-	padding: 1rem 4rem;
+	padding: 1rem 5rem;
 	background-color: var(--green);
 	color: #fff;
 	font-weight: 500;
@@ -124,7 +124,32 @@ body {
 	border-radius: 15px;
 }
 
+/* hero section */
 
+.hero {
+}
+.container {
+}
+.hero__left {
+}
+.hero__text {
+}
+.intro-text {
+}
+.intro-text__header {
+}
+.intro-text__description {
+}
+.btn {
+}
+.hero__right {
+}
+.hero__img {
+}
+.hero__img-back {
+}
+.hero__img-front {
+}
 
 /* How it Works section */
 
