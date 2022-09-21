@@ -33,7 +33,7 @@ html {
 }
 
 body {
-	background-color: #e5e5e5;
+	background-color: #fff;
 }
 
 .container {
@@ -51,6 +51,24 @@ body {
 	line-height: 38px;
 	border: none;
 	border-radius: 20px 20px 20px 0px;
+}
+
+.intro-text {}
+
+.intro-text__header {
+	font-weight: 800;
+	font-size: 70px;
+	line-height: 105px;
+	color: #1c2323;
+	padding-bottom: 2rem;
+}
+
+.intro-text__description {
+	font-weight: 400;
+	font-size: 30px;
+	line-height: 45px;
+	color: #404242;
+	padding-bottom: 2.5rem;
 }
 
 .header {
@@ -117,8 +135,7 @@ body {
 	width: 80%;
 }
 
-.nav__link {
-}
+.nav__link {}
 
 .btn-login {
 	border-radius: 15px;
@@ -127,61 +144,67 @@ body {
 /* hero section */
 
 .hero {
+	padding-top: 2rem;
 }
-.container {
+
+.hero .container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 6.5rem;
 }
-.hero__left {
-}
-.hero__text {
-}
-.intro-text {
-}
-.intro-text__header {
-}
-.intro-text__description {
-}
-.btn {
-}
-.hero__right {
-}
+
+.hero__left {}
+
+.hero__text {}
+
+.hero__right {}
+
 .hero__img {
+	position: relative;
+	margin-right: -65px;
 }
-.hero__img-back {
-}
+
+.hero__img-back {}
+
 .hero__img-front {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
 }
 
 /* How it Works section */
 
-.hiw {
-}
-.container {
-}
-.hiw__intro-text {
-}
-.intro-text {
-}
-.intro-text__header {
-}
-.intro-text__description {
-}
-.hiw__video-sec {
-}
-.hiw__video {
-}
-.hiw__video-desc {
-}
-.hiw__video-link {
-}
-.hiw__video-run-btn {
-}
-.hiw__additional {
-}
-.hiw__additional-image {
-}
-.hiw__additional-text {
-}
-.hit__additional-header {
-}
-.hit__additional-desc {
-}
+.hiw {}
+
+.container {}
+
+.hiw__intro-text {}
+
+.intro-text {}
+
+.intro-text__header {}
+
+.intro-text__description {}
+
+.hiw__video-sec {}
+
+.hiw__video {}
+
+.hiw__video-desc {}
+
+.hiw__video-link {}
+
+.hiw__video-run-btn {}
+
+.hiw__additional {}
+
+.hiw__additional-image {}
+
+.hiw__additional-text {}
+
+.hit__additional-header {}
+
+.hit__additional-desc {}
