@@ -40,7 +40,6 @@ main section {
 	margin: 2rem 0 7rem 0;
 }
 
-
 /* general clasess */
 
 .container {
@@ -103,7 +102,6 @@ main section {
 .intro-text-separator:first-child {
 	margin-bottom: 1rem;
 }
-
 
 /* header styles */
 
@@ -171,8 +169,7 @@ main section {
 	width: 80%;
 }
 
-.nav__link {
-}
+.nav__link {}
 
 .btn-login {
 	font-weight: 500;
@@ -181,8 +178,7 @@ main section {
 
 /* hero section */
 
-.hero {
-}
+.hero {}
 
 .hero .container {
 	display: flex;
@@ -191,22 +187,18 @@ main section {
 	gap: 6.5rem;
 }
 
-.hero__left {
-}
+.hero__left {}
 
-.hero__text {
-}
+.hero__text {}
 
-.hero__right {
-}
+.hero__right {}
 
 .hero__img {
 	position: relative;
 	margin-right: -65px;
 }
 
-.hero__img-back {
-}
+.hero__img-back {}
 
 .hero__img-front {
 	position: absolute;
@@ -217,11 +209,9 @@ main section {
 
 /* How it Works section */
 
-.hiw {
-}
+.hiw {}
 
-.container {
-}
+.container {}
 
 .hiw__intro-text {
 	width: 510px;
@@ -294,8 +284,7 @@ main section {
 	margin-top: 8rem;
 }
 
-.hiw__additional-image {
-}
+.hiw__additional-image {}
 
 .hiw__additional-image img {
 	width: 100%;
@@ -322,17 +311,63 @@ main section {
 	color: var(--green-dark);
 }
 
+/* Project section */
+.projects {}
+
+.projects__intro {}
+
+.projects__items {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 8rem;
+}
+
+.projects__item {
+	display: flex;
+	flex-direction: column;
+}
+
+.projects__item:nth-child(2) > *:not(.item__image){
+	order: 2;
+}
+
+
+.item {}
+
+.item__header {
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 60px;
+	color: var(--green);
+	margin-bottom: 0.4rem;
+}
+
+.item-description {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 30px;
+	color: var(--green-dark);
+	margin-bottom: 2rem;
+}
+
+.item__image {
+	margin: 0.5rem 0;
+}
+
+.item__image img {
+	width: 100%;
+}
+
 /* Contact us section */
 
-.contact {
-}
+.contact {}
 
 .contact .container {
 	display: flex;
 }
 
-.contact__intro-text {
-}
+.contact__intro-text {}
 
 .contact__form {
 	flex: 1 1 100%;
@@ -342,7 +377,8 @@ main section {
 	padding: 4rem;
 }
 
-.contact__input, .contact__desc {
+.contact__input,
+.contact__desc {
 	font-family: inherit;
 	font-weight: 500;
 	font-size: 25px;
@@ -358,7 +394,8 @@ main section {
 	border-bottom: 1px solid #000;
 }
 
-.contact__input::placeholder, .contact__desc::placeholder {
+.contact__input::placeholder,
+.contact__desc::placeholder {
 	font-weight: 500;
 	font-size: 25px;
 	line-height: 38px;
@@ -366,6 +403,7 @@ main section {
 }
 
 .contact__desc {
+	resize: none;
 }
 
 .contact .btn {
