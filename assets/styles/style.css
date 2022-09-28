@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500&family=Port+Lligat+Sans&display=swap');
 
 *,
 *::after,
@@ -37,7 +37,7 @@ body {
 }
 
 main section {
-	margin: 2rem 0 7rem 0;
+	margin: 2rem 0 14rem 0;
 }
 
 /* general clasess */
@@ -178,7 +178,9 @@ main section {
 
 /* hero section */
 
-.hero {}
+.hero {
+	margin-bottom: 7rem;
+}
 
 .hero .container {
 	display: flex;
@@ -209,7 +211,9 @@ main section {
 
 /* How it Works section */
 
-.hiw {}
+.hiw {
+	margin-bottom: 7rem;
+}
 
 .container {}
 
@@ -328,10 +332,9 @@ main section {
 	flex-direction: column;
 }
 
-.projects__item:nth-child(2) > *:not(.item__image){
+.projects__item:nth-child(2) > *:not(.item__image) {
 	order: 2;
 }
-
 
 .item {}
 
@@ -357,6 +360,109 @@ main section {
 
 .item__image img {
 	width: 100%;
+}
+
+/* testimonial section */
+
+.testimonial {
+
+}
+
+.testimonial__intro-text {
+	padding-bottom: 0;
+}
+
+.testimonial__brands {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 5rem;
+}
+
+.testimonial__brand {
+	margin-bottom: 4rem;
+}
+
+.testimonial__summary {
+	background-color: var(--green-light);
+}
+
+.testimonial-summary {
+	display: flex;
+}
+
+.testimonial-summary__image {
+	flex: 1 1 40%;
+	overflow: hidden;
+}
+
+.testimonial-summary__image img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+.testimonial-summary__text {
+	flex: 1 1 60%;
+	padding: 3rem 7rem 8rem 8rem;
+}
+
+.testimonial-summary__headers {
+	display: flex;
+	justify-content: space-between;
+	gap: 7rem;
+	margin-bottom: 8rem;
+	
+}
+
+.testimonial-summary__header {
+	color: var(--green);
+}
+
+.testimonial-summary__number {
+	font-weight: 800;
+	font-size: 70px;
+	line-height: 105px;
+}
+
+.testimonial-summary__aim {
+	font-weight: 600;
+	font-size: 30px;
+	line-height: 45px;
+}
+
+.testimonial-summary__blockquote {}
+
+.testimonial-blockquote {
+	position: relative;
+	font-weight: 500;
+	font-size: 25px;
+	line-height: 38px;
+}
+
+.testimonial-blockquote::before {
+	content: "“";
+	position: absolute;
+	top: -50%;
+	left: -8%;
+	font-family: 'Port Lligat Sans', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 300px;
+	line-height: 321px;
+	color: #fff;
+}
+
+.testimonial-blockquote__phrase {
+	position: relative;
+	z-index: 1;
+	color: var(--green-dark);
+	margin-bottom: 2.5rem;
+}
+
+.testimonial-blockquote__author {
+	color: var(--green);
 }
 
 /* Contact us section */
