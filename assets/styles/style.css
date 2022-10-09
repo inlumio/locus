@@ -34,6 +34,7 @@ html {
 
 body {
 	background-color: #fff;
+	overflow-x: hidden;
 }
 
 main section {
@@ -43,7 +44,7 @@ main section {
 /* general clasess */
 
 .container {
-	max-width: 1645px;
+	width: 100%;
 	margin: 0 auto;
 	padding: 0 15px;
 }
@@ -109,10 +110,13 @@ main section {
 	padding: 85px 0;
 }
 
-.nav {
+.header .container {
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+}
+
+.nav {
+
 }
 
 .logo {
@@ -133,10 +137,12 @@ main section {
 }
 
 .nav__list {
+	height: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	gap: 3rem;
+	display: none;
 }
 
 .nav__item {
@@ -171,6 +177,15 @@ main section {
 
 .nav__link {}
 
+.nav-toggle {
+	background-color: var(--green);
+	color: white;
+	outline: none;
+	border: none;
+	border-radius: 15px;
+	padding: 1rem;
+}
+
 .btn-login {
 	font-weight: 500;
 	border-radius: 15px;
@@ -197,7 +212,7 @@ main section {
 
 .hero__img {
 	position: relative;
-	margin-right: -65px;
+	transform: translateX(65px);
 }
 
 .hero__img-back {}
@@ -273,7 +288,7 @@ main section {
 	background-color: #fff;
 	border-radius: 50%;
 	box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.4);
-	animation: btn-pulse 2s 0.5s infinite;
+	animation: btn-pulse 2s ease-in 0.5s infinite;
 }
 
 .hiw__video-run-btn svg {
@@ -515,6 +530,22 @@ main section {
 .contact .btn {
 	align-self: flex-end;
 }
+
+@media (min-width: 960px) {
+	.nav__list {
+		display: flex;
+	}
+	.nav-toggle {
+		display: none;
+	}
+}
+
+@media (min-width: 1920px) {
+	.container {
+		max-width: 1600px;
+	}
+}
+
 
 @keyframes btn-pulse {
 	0% {
